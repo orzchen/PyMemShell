@@ -19,7 +19,7 @@ import string
 
 
 proxies = {
-    'http': 'http://127.0.0.1:6666'
+    # 'http': 'http://127.0.0.1:6666'
 }
 
 def Logger():
